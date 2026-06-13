@@ -23,7 +23,7 @@ abstract class BaseViewModel<S: BaseViewModel.State, E: BaseViewModel.Event>(ini
     val events: Flow<E>
         get() = _events.receiveAsFlow()
 
-    private val _state = MutableStateFlow<S>(initialState)
+    protected val _state = MutableStateFlow<S>(initialState)
     val state: StateFlow<S>
         get() = _state.asStateFlow()
 
@@ -33,7 +33,7 @@ abstract class BaseViewModel<S: BaseViewModel.State, E: BaseViewModel.Event>(ini
         }
     }
 
-    protected fun setState(state: S) {
+    open fun setState(state: S) {
         viewModelScope.launch {
             _state.value = state
         }

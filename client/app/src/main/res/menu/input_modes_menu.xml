@@ -18,6 +18,10 @@
                     android:icon="@drawable/ic_baseline_keyboard_24"
                     android:title="Keyboard" />
                 <item
+                    android:id="@+id/mode_duckyscript"
+                    android:icon="@drawable/ic_baseline_keyboard_24"
+                    android:title="DuckyScript" />
+                <item
                     android:id="@+id/mode_change_layout"
                     android:icon="@drawable/ic_language"
                     android:title="Layout: US English"
@@ -26,7 +30,7 @@
         </menu>
     </item>
 
-    <item android:title="Session">1
+    <item android:title="Session">
         <menu>
             <item
                 android:id="@+id/mode_disconnect"

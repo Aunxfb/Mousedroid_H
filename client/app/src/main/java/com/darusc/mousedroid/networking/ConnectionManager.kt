@@ -169,4 +169,12 @@ class ConnectionManager private constructor() : Connection.Listener, BatteryMoni
             true -> CoroutineScope(Dispatchers.IO).launch { connection?.send(event) }
         }
     }
+
+    /** Send raw bytes through the active TCP connection */
+    fun sendRawBytes(bytes: ByteArray) {
+        val tcpConnection = this.tcpConn
+        if (tcpConnection != null) {
+            tcpConnection.sendBytes(bytes)
+        }
+    }
 }

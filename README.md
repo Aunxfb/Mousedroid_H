@@ -37,7 +37,8 @@ Mousedroid is a versatile, cross-platform application that turns your Android ph
     * **Bluetooth:** Direct pairing for a cable-free experience without needing a shared network.
     * **Wi-Fi:** Wireless freedom across your local network.
     * **USB (Wired):** Near-zero latency using ADB.
-* **Full Input Suite:** Switch between a responsive Touchpad, a full Keyboard, and a Numpad.
+* **Full Input Suite:** Switch between a responsive Touchpad, a full Keyboard, a Numpad, and a built-in **DuckyScript editor**.
+* **DuckyScript Execution:** Write or load `.txt` DuckyScript payloads and replay them as HID keystrokes through the active Bluetooth or network connection, with a live debug console showing every keypress in real time.
 * **Smart Gestures:** Multi-touch support for right-clicking, scrolling, and zooming.
 * **Cross-Platform:** Native server support for both Windows and Linux users.
 
@@ -93,3 +94,9 @@ If you encounter a bug or crash, please open a [New Issue](https://github.com/da
 * Your PC Operating System (e.g., Windows 11, Ubuntu 22.04).
 * Your Phone Model and Android Version.
 * The connection method you were using when the issue occurred.
+
+---
+
+## AI Use Disclaimer
+
+Portions of this project's codebase were developed, refactored, or reviewed with the assistance of large language model (LLM) tools. AI-generated code may contain subtle bugs, vulnerabilities, or logically incorrect code — use at your own risk. All contributions were reviewed, tested, and validated by a human developer, but the authors assume no liability for any issues arising from the use of this software.

@@ -93,6 +93,11 @@ class Input: Fragment() {
                     closeSoftKeyboard()
                     replaceChildFragment(Numpad())
                 }
+                R.id.mode_duckyscript -> {
+                    item.isChecked = true
+                    closeSoftKeyboard()
+                    replaceChildFragment(DuckyScriptFragment())
+                }
                 R.id.mode_keyboard -> {
                     binding.drawerLayout.closeDrawer(GravityCompat.START)
                     openSoftKeyboard()

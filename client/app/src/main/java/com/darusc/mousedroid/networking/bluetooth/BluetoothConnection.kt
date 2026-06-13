@@ -126,9 +126,9 @@ class BluetoothConnection(
         for (reports in reportChannel) {
             for (report in reports) {
                 bluetoothHIDDevice?.sendReport(bluetoothHostDevice, report.id, report.bytes)
-                if (report is KeyboardReport) {
-                    delay(15)
-                }
+            }
+            if (reports.any { it is KeyboardReport }) {
+                delay(15)
             }
         }
     }

@@ -115,7 +115,7 @@ object Keycode {
     const val KEY_F12: Byte = 0x45.toByte()
 
     // Navigation & Editing
-    const val KEY_PRByte_SCREEN: Byte = 0x46.toByte()
+    const val KEY_PRINT_SCREEN: Byte = 0x46.toByte()
     const val KEY_SCROLL_LOCK: Byte  = 0x47.toByte()
     const val KEY_PAUSE: Byte        = 0x48.toByte()
     const val KEY_INSERT: Byte       = 0x49.toByte()
@@ -181,8 +181,13 @@ object Keycode {
     const val KEY_PASTE: Byte        = 0x7D.toByte()
     const val KEY_FIND: Byte         = 0x7E.toByte()
     const val KEY_MUTE: Byte         = 0x7F.toByte()
-    const val KEY_VOLUME_UP: Byte    = 0x80.toByte()
+   const val KEY_VOLUME_UP: Byte    = 0x80.toByte()
     const val KEY_VOLUME_DOWN: Byte  = 0x81.toByte()
+    const val KEY_BROWSE: Byte       = 0x86.toByte()
+    const val KEY_BROWSE_BACK: Byte  = 0x87.toByte()
+    const val KEY_BROWSE_FORWARD: Byte = 0x88.toByte()
+    const val KEY_BROWSE_REFRESH: Byte = 0x89.toByte()
+    const val KEY_BROWSE_FAVORITES: Byte = 0x8A.toByte()
 
     // Modifier HID Usages (If used as keys themselves)
     const val KEY_LEFT_CTRL: Byte    = 0xE0.toByte()
