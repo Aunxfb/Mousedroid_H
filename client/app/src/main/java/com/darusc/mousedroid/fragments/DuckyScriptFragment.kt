@@ -133,11 +133,8 @@ class DuckyScriptFragment : Fragment() {
                 launch {
                     viewModel.logText.collect { text ->
                         binding.debugConsole.text = text
-                        binding.debugConsole.post {
-                            binding.debugConsole.scrollTo(
-                                0, binding.debugConsole.layout?.getLineTop(binding.debugConsole.lineCount)
-                                    ?.coerceAtLeast(0) ?: 0
-                            )
+                        binding.scrollView.post {
+                            binding.scrollView.fullScroll(View.FOCUS_DOWN)
                         }
                     }
                 }

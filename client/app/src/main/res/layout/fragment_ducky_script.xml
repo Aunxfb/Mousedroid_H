@@ -134,28 +134,21 @@
             </LinearLayout>
 
             <ScrollView
+                android:id="@+id/scrollView"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1">
 
-                <LinearLayout
+                <TextView
+                    android:id="@+id/debugConsole"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:id="@+id/debugConsole"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textSize="11sp"
-                        android:textColor="#88FF88"
-                        android:fontFamily="monospace"
-                        android:background="#0A0A0A"
-                        android:padding="8dp"
-                        android:maxLines="1000"
-                        android:scrollbars="vertical" />
-
-                </LinearLayout>
+                    android:textSize="11sp"
+                    android:textColor="#88FF88"
+                    android:fontFamily="monospace"
+                    android:background="#0A0A0A"
+                    android:padding="8dp"
+                    android:textIsSelectable="true" />
 
             </ScrollView>
 
